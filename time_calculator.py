@@ -13,11 +13,11 @@ def add_time(current_time, duration, day=None):
   next_time_minutes = int(current_time.split(" ")[0].split(":")[1]) + int(duration.split(":")[1])
 
   # check if minute more than 60 and convert to hour if minute > 60
-  if next_time_minutes > 60:
+  if next_time_minutes >= 60:
     next_time_minutes -= 60
     duration_hour += 1
 
-  # calcutate next time hour and format
+  # calcutate next time hour, format and total days
   count_hours = (current_time_hour + duration_hour) % 12
   count_days = (current_time_hour + duration_hour) // 24
   count_format = (current_time_hour + duration_hour) % 24
