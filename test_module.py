@@ -12,7 +12,7 @@ class UnitTests(unittest.TestCase):
     def test_different_period(self):
         actual = add_time("11:55 AM", "3:12")
         expected = "3:07 PM"
-        self.assertEqual(actual, expected, 'Expected calling "add_time()" with "11:55 AM", "3:12" to return "3:07 PM"')
+        self.assertEqual(actual, expected, 'Expected calling "ad0d_time()" with "11:55 AM", "3:12" to return "3:07 PM"')
 
     def test_next_day(self):
         actual = add_time("9:15 PM", "5:30")
